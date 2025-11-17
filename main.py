@@ -4,7 +4,7 @@ from pydantic import BaseModel         # Importiert die BaseModel-Klasse für Da
 from typing import Optional
 
 # FastAPI-App initialisieren
-app = FastAPI()
+app = FastAPI(title="WechselkursrechnerAPI")
 
 # Pydantic-Modell für die Anfrage
 class WechselkursRequest(BaseModel):
